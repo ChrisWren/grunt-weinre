@@ -1,0 +1,32 @@
+{
+  "name": "grunt-weinre",
+  "version": "0.0.0",
+  "description": "Grunt task to run a weinre server to debug your mobile web site/app.",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisWren/grunt-weinre.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "weinre",
+    "server"
+  ],
+  "author": "Chris Wren",
+  "license": "MIT",
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.5.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "matchdep": "~0.1.2",
+    "grunt-mdlint": "0.0.0"
+  },
+  "dependencies": {
+    "weinre": "~2.0.0-pre-HH0SN197"
+  }
+}
