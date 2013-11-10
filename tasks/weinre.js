@@ -8,7 +8,7 @@
 module.exports = function (grunt) {
   'use strict';
 
-  grunt.registerMultiTask('weinre', 'Runs a weinre monitor of your node.js server.', function () {
+  grunt.registerMultiTask('weinre', 'Runs a weinre server to debug your mobile web site/app.', function () {
 
     var options = this.options();
     var done = this.async();
