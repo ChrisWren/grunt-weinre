@@ -5,6 +5,7 @@
 
 ## Getting Started
 If you haven't used grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a gruntfile as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
+
 ```shell
 npm install grunt-weinre --save-dev
 ```
@@ -25,7 +26,22 @@ weinre: {
 }
 ```
 
-Here is a config that uses all of the available options(with their default values) for weinre:
+### Recommended Usage
+
+The default HTTP port of 8080 is pretty popular, so offsetting it by 2 may help you dodge a collision. Also setting the `boundHost` to `-all-` will let your mobile devices connect via your local ip address, since the default `localhost` won't work for them.
+
+```js
+weinre: {
+  dev: {
+  options: {
+      httpPort: 8082,
+      boundHost: '-all-'
+    }
+  }
+}
+```
+
+### Usage with all available options(with their default values):
 
 ```js
 weinre: {
@@ -43,7 +59,8 @@ weinre: {
 ```
 
 #### Running weinre concurrently
-A common use case is to run `weinre` with other tasks concurrently. This can be achieved with the following config, which uses [grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent) to run weinre, [nodemon](https://github.com/ChrisWren/grunt-nodemon), [node-inspector](https://github.com/ChrisWren/grunt-node-inspector), and [watch](https://github.com/gruntjs/grunt-contrib-watch) in a single terminal tab:
+A common use case is to run `weinre` with other tasks concurrently. This can be achieved with the following config for the [grunt-concurrent](https://github.com/sindresorhus/grunt-concurrent) plugin which runs weinre, [nodemon](https://github.com/ChrisWren/grunt-nodemon), [node-inspector](https://github.com/ChrisWren/grunt-node-inspector), and [watch](https://github.com/gruntjs/grunt-contrib-watch) in a single terminal tab:
+
 ```js
 concurrent: {
   dev: {
@@ -54,6 +71,7 @@ concurrent: {
   }
 }
 ```
+
 ### Options
 
 #### httpPort
