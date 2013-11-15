@@ -1,6 +1,6 @@
 {
   "name": "grunt-weinre",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grunt task to run a weinre server to debug your mobile web site/app.",
   "scripts": {
     "test": "grunt test"
