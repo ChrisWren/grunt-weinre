@@ -106,4 +106,6 @@ Seconds to wait to kill client.
 
 # Changelog
 
-**0.0.1** - Initial release
+**0.0.2** - Fixed error logging, allowed weinre to be listed as an app dependency.
+
+**0.0.1** - Initial release.
