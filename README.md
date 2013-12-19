@@ -33,7 +33,7 @@ The default HTTP port of 8080 is pretty popular, so offsetting it by 2 may help 
 ```js
 weinre: {
   dev: {
-  options: {
+    options: {
       httpPort: 8082,
       boundHost: '-all-'
     }
