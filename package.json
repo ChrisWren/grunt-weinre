@@ -27,6 +27,6 @@
     "grunt-mdlint": "0.0.0"
   },
   "dependencies": {
-    "weinre": "~2.0.0-pre-HH0SN197"
+    "weinre": "~2.0.0-pre-I0Z7U9OV"
   }
 }
